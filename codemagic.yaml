@@ -1,1 +1,8 @@
-xcodebuild -help 
+workflows:
+  unity-ios-workflow:
+    name: Unity iOS Workflow
+    max_build_duration: 120
+    scripts:
+      - name: Set up macOS keychain using Codemagic CLI 'keychain' command
+        script: |
+          xcodebuild -help
